@@ -1,0 +1,8 @@
+Ships/VAB/Auto-Saved Ship.craft
+Ships/VAB/Untitled Space Craft.craft
+Ships/SPH/Auto-Saved Ship.craft
+Ships/SPH/Untitled Space Craft.craft
+
+# Only control the persistent save file.
+*.sfs
+!persistent.sfs

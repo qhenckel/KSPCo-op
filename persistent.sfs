@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = -1000
+		update = 461.919999999869
 		version = 1.1.2
 		WEIGHTS
 		{
@@ -119,99 +119,13 @@ GAME
 			ARMContract = 30
 			RecoverAsset = 30
 			PlantFlag = 30
-			PartTest = 30
+			PartTest = 38
 			GrandTour = 30
 			ExploreBody = 30
 			CollectScience = 30
 		}
 		CONTRACTS
 		{
-			CONTRACT
-			{
-				guid = ea3bee4d-eac3-41fc-885e-abf7550a74a5
-				type = SurveyContract
-				prestige = 0
-				seed = -1888434806
-				state = Offered
-				agent = StrutCo
-				deadlineType = Floating
-				expiryType = Floating
-				values = 86400,46008000,6750,12521.2494313717,7087.49967813492,0,1.904762,3,86501.4,0,0,0
-				targetBody = 1
-				centerLatitude = -1.02796648662061
-				centerLongitude = -77.5420958778632
-				randomTopic = Kerbin
-				dataName = observational
-				anomalyName = inconsistencies
-				reportName = reports
-				locationName = Kerbin
-				focusedSurvey = True
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Take a crew report
-					experiment = crewReport
-					flightThreshold = 17600
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = 1969836253
-					wpIndex = 0
-					wpTexture = report
-					wpLatitude = -1.02797258236308
-					wpLongitude = -77.5421143330757
-					wpLandlocked = False
-				}
-			}
-			CONTRACT
-			{
-				guid = 9506df6b-0675-4395-b3ab-8a79c1357239
-				type = SurveyContract
-				prestige = 0
-				seed = -1888434777
-				state = Offered
-				agent = Ionic Symphonic Protonic Electronics
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,46008000,6750,11925,6750,0,2,3,129701.4,0,0,0
-				targetBody = 1
-				centerLatitude = -3.10847441599259
-				centerLongitude = -70.3916475493515
-				randomTopic = Kerbin
-				dataName = observational
-				anomalyName = inconsistencies
-				reportName = reports
-				locationName = Kerbin
-				focusedSurvey = True
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Take a crew report
-					experiment = crewReport
-					flightThreshold = 18000
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1970781211
-					wpIndex = 0
-					wpTexture = report
-					wpLatitude = -3.10847382255067
-					wpLongitude = -70.3916475127454
-					wpLandlocked = False
-				}
-			}
 			CONTRACT
 			{
 				guid = fada0f05-4b31-4cf7-88d7-8671f158c257
@@ -300,6 +214,92 @@ GAME
 			}
 			CONTRACT
 			{
+				guid = ea3bee4d-eac3-41fc-885e-abf7550a74a5
+				type = SurveyContract
+				prestige = 0
+				seed = -1888434806
+				state = Offered
+				agent = StrutCo
+				deadlineType = Floating
+				expiryType = Floating
+				values = 86400,46008000,6750,12521.2494313717,7087.49967813492,0,1.904762,3,86501.4,0,0,0
+				targetBody = 1
+				centerLatitude = -1.02796648662061
+				centerLongitude = -77.5420958778632
+				randomTopic = Kerbin
+				dataName = observational
+				anomalyName = inconsistencies
+				reportName = reports
+				locationName = Kerbin
+				focusedSurvey = True
+				targetBand = LOW
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Take a crew report
+					experiment = crewReport
+					flightThreshold = 17600
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 1969836253
+					wpIndex = 0
+					wpTexture = report
+					wpLatitude = -1.02797258236308
+					wpLongitude = -77.5421143330757
+					wpLandlocked = False
+				}
+			}
+			CONTRACT
+			{
+				guid = 9506df6b-0675-4395-b3ab-8a79c1357239
+				type = SurveyContract
+				prestige = 0
+				seed = -1888434777
+				state = Offered
+				agent = Ionic Symphonic Protonic Electronics
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,46008000,6750,11925,6750,0,2,3,129701.4,0,0,0
+				targetBody = 1
+				centerLatitude = -3.10847441599259
+				centerLongitude = -70.3916475493515
+				randomTopic = Kerbin
+				dataName = observational
+				anomalyName = inconsistencies
+				reportName = reports
+				locationName = Kerbin
+				focusedSurvey = True
+				targetBand = LOW
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Take a crew report
+					experiment = crewReport
+					flightThreshold = 18000
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -1970781211
+					wpIndex = 0
+					wpTexture = report
+					wpLatitude = -3.10847382255067
+					wpLongitude = -70.3916475127454
+					wpLandlocked = False
+				}
+			}
+			CONTRACT
+			{
 				guid = 2b54eda5-7bf1-4187-a09b-4643160c080f
 				type = PartTest
 				prestige = 0
@@ -370,11 +370,11 @@ GAME
 				type = PartTest
 				prestige = 0
 				seed = -1888434818
-				state = Offered
+				state = Active
 				agent = Research & Development Department
 				deadlineType = Floating
 				expiryType = Floating
-				values = 21600,9201600,1620,4050,2700,1,1,2,21701.4,0,0,0
+				values = 21600,9201600,1620,4050,2700,1,1,2,21701.4,462.479999999868,9202062.48,0
 				part = solidBooster
 				haul = False
 				dest = 1
@@ -466,12 +466,12 @@ GAME
 				type = WorldFirstContract
 				prestige = 1
 				seed = -482589255
-				state = Offered
+				state = Active
 				agent = Kerbin World-Firsts Record-Keeping Society
 				deadlineType = None
 				expiryType = Floating
 				ignoresWeight = True
-				values = 86400,0,17084.7449684143,31728.812084198,20160,6,14.16,0,86400.08,0,0,0
+				values = 86400,0,17084.7449684143,31728.812084198,20160,6,14.16,0,86400.08,432.659999999896,0,0
 				targetBody = 1
 				targetType = REACHSPACE
 				PARAM
@@ -670,7 +670,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 92666.4507045745
+		funds = 111371.195672989
 	}
 	SCENARIO
 	{
@@ -812,6 +812,10 @@ GAME
 			sci = 5
 			cap = 6
 		}
+		ExpParts
+		{
+			solidBooster = 1
+		}
 	}
 	SCENARIO
 	{
@@ -947,7 +951,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.2
-		UT = 381.659999999942
+		UT = 466.419999999865
 		activeVessel = 0
 		mapViewFiltering = -1026
 	}

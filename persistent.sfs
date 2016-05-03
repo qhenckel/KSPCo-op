@@ -1400,7 +1400,7 @@ GAME
 		}
 		KERBAL
 		{
-			name = Bob Kerman
+			name = Ian
 			gender = Male
 			type = Crew
 			trait = Scientist

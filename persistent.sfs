@@ -10,7 +10,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Agencies/StrutCo
-	launchID = 5
+	launchID = 6
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	PARAMETERS
@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 1858.46419433466
+		update = 2328.23159850909
 		version = 1.1.2
 		WEIGHTS
 		{
@@ -425,14 +425,16 @@ GAME
 				PARAM
 				{
 					name = KerbalTourParameter
-					state = Incomplete
-					values = 10969,0,0,0,0
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
 					kerbalName = Gerble Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3656,0,0,0,0
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
 						kerbalName = Gerble Kerman
@@ -1028,7 +1030,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 184015.115555763
+		funds = 195568.462532997
 	}
 	SCENARIO
 	{
@@ -1060,8 +1062,8 @@ GAME
 			}
 			RecordsSpeed
 			{
-				reached = 604.179999999739
-				record = 1206.98056267215
+				reached = 1954.18419433458
+				record = 1307.31182969119
 			}
 			RecordsDistance
 			{
@@ -1129,7 +1131,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 55.04
+		sci = 60.29
 		Tech
 		{
 			id = start
@@ -1147,6 +1149,7 @@ GAME
 			id = basicRocketry
 			state = Available
 			cost = 5
+			part = solidBooster
 		}
 		Tech
 		{
@@ -1240,10 +1243,20 @@ GAME
 			id = recovery@KerbinSubOrbited
 			title = Recovery of a vessel after a sub-orbital flight.
 			dsc = 1
-			scv = 0.1666667
+			scv = 0.02777775
 			sbv = 8
-			sci = 8
+			sci = 9.333334
 			cap = 9.6
+		}
+		Science
+		{
+			id = crewReport@KerbinFlyingHigh
+			title = Crew Report from Kerbin's upper atmosphere
+			dsc = 1
+			scv = 0
+			sbv = 0.9
+			sci = 4.5
+			cap = 4.5
 		}
 	}
 	SCENARIO
@@ -1388,7 +1401,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.2
-		UT = 1861.50419433466
+		UT = 2337.05159850908
 		activeVessel = 0
 		mapViewFiltering = -1026
 	}
@@ -1652,7 +1665,7 @@ GAME
 			idx = 0
 			CAREER_LOG
 			{
-				flight = 3
+				flight = 4
 				0 = ExitVessel,Kerbin
 				0 = Flight,Kerbin
 				0 = BoardVessel,Kerbin
@@ -1662,10 +1675,14 @@ GAME
 				1 = Recover
 				2 = Land,Kerbin
 				2 = Recover
+				3 = Flight,Kerbin
+				3 = Suborbit,Kerbin
+				3 = Land,Kerbin
+				3 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 3
+				flight = 4
 			}
 		}
 		KERBAL
@@ -1780,28 +1797,6 @@ GAME
 		}
 		KERBAL
 		{
-			name = Gerble Kerman
-			gender = Male
-			type = Tourist
-			trait = Tourist
-			brave = 0.3023161
-			dumb = 0.3459752
-			badS = False
-			tour = False
-			state = Available
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
 			name = Ronlas Kerman
 			gender = Male
 			type = Tourist
@@ -1872,8 +1867,16 @@ GAME
 		flash = True
 		MESSAGE
 		{
-			title = Contract Complete
-			message = <b>Test TT-38K Radial Decoupler at the Launch Site.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  4,252   </color>~n<color=#6DCFF6>© 1   </color>~n<color=#E0D503>¡ 1   </color>~n~n
+			title = Contract Parameter Complete
+			message = <b>Ferry four tourists safely to their destinations.</b>~n~n'Gerble's Travel Itinerary' complete!~n~n<color=#B4D455>£ 10,969   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Parameter Complete
+			message = <b>Ferry four tourists safely to their destinations.</b>~n~n'Suborbital spaceflight on Kerbin' complete!~n~n<color=#B4D455>£ 3,656   </color>
 			color = 2
 			icon = 3
 			read = False

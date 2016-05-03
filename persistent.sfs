@@ -10,9 +10,9 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Agencies/StrutCo
-	launchID = 4
+	launchID = 5
 	modded = True
-	envInfo =  - Environment Info - Win32NT FFFFFFFFFFFFFFFF  Args: KSP.exe  - 
+	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	PARAMETERS
 	{
 		preset = Moderate
@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 1823.0441943347
+		update = 1858.46419433466
 		version = 1.1.2
 		WEIGHTS
 		{
@@ -409,54 +409,6 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 3f26edf4-83c8-4ada-9e22-dc4530cf5e7d
-				type = PartTest
-				prestige = 0
-				seed = -302992937
-				state = Active
-				agent = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,9201600,1620,4252.49980688095,2834.99987125397,1,0.952381,2,23243.5041943349,1760.84419433475,9203360.84419433,0
-				part = radialDecoupler
-				haul = False
-				dest = 1
-				sit = PRELAUNCH
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = radialDecoupler
-					body = Kerbin
-					situation = PRELAUNCH
-					uniqueID = 0.2021278441893532
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = PRELAUNCH
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
 				guid = ceee1c9f-bc86-4385-b199-89c7a6ece0e4
 				type = TourismContract
 				prestige = 1
@@ -727,6 +679,71 @@ GAME
 					targetType = ORBIT
 				}
 			}
+			CONTRACT
+			{
+				guid = 1ec9bf7e-7404-4b55-b282-2ff320057aa0
+				type = PartTest
+				prestige = 0
+				seed = 1445252278
+				state = Offered
+				agent = Research & Development Department
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,9201600,6075,15188,10125,2,4,4,23439.4841943347,0,0,0
+				part = solidBooster.sm
+				haul = True
+				dest = 1
+				sit = FLYING
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = solidBooster.sm
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.11366641759577506
+					haul = True
+					repeatability = BODYANDSITUATION
+				}
+				PARAM
+				{
+					name = ReachDestination
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					dest = 1
+					title = 
+				}
+				PARAM
+				{
+					name = ReachSituation
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					sit = FLYING
+					title = 
+				}
+				PARAM
+				{
+					name = ReachAltitudeEnvelope
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					minAlt = 14000
+					maxAlt = 21000
+				}
+				PARAM
+				{
+					name = ReachSpeedEnvelope
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					minSpd = 60
+					maxSpd = 240
+				}
+			}
 			CONTRACT_FINISHED
 			{
 				guid = 46717206-d998-4c5c-afb2-03f8817968e6
@@ -949,6 +966,56 @@ GAME
 					}
 				}
 			}
+			CONTRACT_FINISHED
+			{
+				guid = 3f26edf4-83c8-4ada-9e22-dc4530cf5e7d
+				type = PartTest
+				prestige = 0
+				seed = -302992937
+				state = Completed
+				agent = O.M.B. Demolition Enterprises
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,9201600,1620,4252.49980688095,2834.99987125397,1,0.952381,2,23243.5041943349,1760.84419433475,9203360.84419433,0
+				part = radialDecoupler
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					part = radialDecoupler
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.2021278441893532
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					tested = 60530231
+					PARAM
+					{
+						name = ReachDestination
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
+						title = 
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
@@ -961,7 +1028,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 179762.615748882
+		funds = 184015.115555763
 	}
 	SCENARIO
 	{
@@ -1062,7 +1129,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 54.04
+		sci = 55.04
 		Tech
 		{
 			id = start
@@ -1178,10 +1245,6 @@ GAME
 			sci = 8
 			cap = 9.6
 		}
-		ExpParts
-		{
-			radialDecoupler = 1
-		}
 	}
 	SCENARIO
 	{
@@ -1192,7 +1255,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 51.56784
+		rep = 52.5177
 	}
 	SCENARIO
 	{
@@ -1325,27 +1388,27 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.2
-		UT = 1828.32419433469
+		UT = 1861.50419433466
 		activeVessel = 0
 		mapViewFiltering = -1026
 	}
 	LoaderInfo
 	{
-		KerbalAlarmClock v3.6.1.0 = False
-		KerbalEngineer v1.1.0.2 = False
-		KerbalEngineer.Unity v1.0.0.0 = False
-		MiniAVC v1.0.3.2 = False
-		KerbalAlarmClock = False
-		KerbalEngineer = False
-		BetterBurnTime v1.0.0.0 = False
-		NavBallDockingAlignmentIndicator v1.0.5950.156 = False
-		NavballUpDefault v0.0.0.0 = False
-		CLSInterfaces v1.0.0.0 = False
-		ShipManifest v5.0.9.0 = False
-		BetterBurnTime = False
-		NavBallDockingAlignmentIndicator = False
-		NavballUpDefault = False
-		ShipManifest = False
+		BetterBurnTime v1.0.0.0 = True
+		KerbalAlarmClock v3.6.1.0 = True
+		KerbalEngineer v1.1.0.2 = True
+		KerbalEngineer.Unity v1.0.0.0 = True
+		MiniAVC v1.0.3.2 = True
+		NavBallDockingAlignmentIndicator v1.0.5950.156 = True
+		NavballUpDefault v0.0.0.0 = True
+		CLSInterfaces v1.0.0.0 = True
+		ShipManifest v5.0.9.0 = True
+		BetterBurnTime = True
+		KerbalAlarmClock = True
+		KerbalEngineer = True
+		NavBallDockingAlignmentIndicator = True
+		NavballUpDefault = True
+		ShipManifest = True
 	}
 	ROSTER
 	{
@@ -1589,7 +1652,7 @@ GAME
 			idx = 0
 			CAREER_LOG
 			{
-				flight = 2
+				flight = 3
 				0 = ExitVessel,Kerbin
 				0 = Flight,Kerbin
 				0 = BoardVessel,Kerbin
@@ -1597,10 +1660,12 @@ GAME
 				0 = Land,Kerbin
 				0 = Recover
 				1 = Recover
+				2 = Land,Kerbin
+				2 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 2
+				flight = 3
 			}
 		}
 		KERBAL
@@ -1804,6 +1869,14 @@ GAME
 	}
 	MESSAGESYSTEM
 	{
-		flash = False
+		flash = True
+		MESSAGE
+		{
+			title = Contract Complete
+			message = <b>Test TT-38K Radial Decoupler at the Launch Site.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  4,252   </color>~n<color=#6DCFF6>© 1   </color>~n<color=#E0D503>¡ 1   </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
 	}
 }

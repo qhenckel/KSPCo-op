@@ -12,7 +12,7 @@ GAME
 	flag = Squad/Agencies/StrutCo
 	launchID = 4
 	modded = True
-	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
+	envInfo =  - Environment Info - Win32NT FFFFFFFFFFFFFFFF  Args: KSP.exe  - 
 	PARAMETERS
 	{
 		preset = Moderate
@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 1743.56419433477
+		update = 1760.36419433475
 		version = 1.1.2
 		WEIGHTS
 		{
@@ -119,7 +119,7 @@ GAME
 			ARMContract = 30
 			RecoverAsset = 30
 			PlantFlag = 30
-			PartTest = 54
+			PartTest = 62
 			GrandTour = 30
 			ExploreBody = 30
 			CollectScience = 30
@@ -300,6 +300,49 @@ GAME
 			}
 			CONTRACT
 			{
+				guid = 17a2983e-b9be-4ea1-ba4c-8ccee0c2bf28
+				type = SurveyContract
+				prestige = 0
+				seed = -332557147
+				state = Offered
+				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 81509.4274520874,43403770.1182365,6249.99989569187,11593.7492800007,7087.49967813492,0,2.137815,2.941176,83153.1716464223,0,0,0
+				targetBody = 1
+				centerLatitude = 0.970102248733113
+				centerLongitude = -76.8253891328457
+				randomTopic = Kerbin
+				dataName = observational
+				anomalyName = inconsistencies
+				reportName = reports
+				locationName = Kerbin
+				focusedSurvey = True
+				targetBand = HIGH
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Take a crew report
+					experiment = crewReport
+					flightThreshold = 18500
+					band = 3
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 447255141
+					wpIndex = 0
+					wpTexture = report
+					wpLatitude = 0.97008369292024
+					wpLongitude = -76.8253574506764
+					wpLandlocked = False
+				}
+			}
+			CONTRACT
+			{
 				guid = 2b54eda5-7bf1-4187-a09b-4643160c080f
 				type = PartTest
 				prestige = 0
@@ -361,6 +404,54 @@ GAME
 						values = 0,0,0,0,0
 						minSpd = 70
 						maxSpd = 240
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 3f26edf4-83c8-4ada-9e22-dc4530cf5e7d
+				type = PartTest
+				prestige = 0
+				seed = -302992937
+				state = Active
+				agent = O.M.B. Demolition Enterprises
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,9201600,1620,4252.49980688095,2834.99987125397,1,0.952381,2,23243.5041943349,1760.84419433475,9203360.84419433,0
+				part = radialDecoupler
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = radialDecoupler
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.2021278441893532
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
+						title = 
 					}
 				}
 			}
@@ -636,97 +727,6 @@ GAME
 					targetType = ORBIT
 				}
 			}
-			CONTRACT
-			{
-				guid = 3f26edf4-83c8-4ada-9e22-dc4530cf5e7d
-				type = PartTest
-				prestige = 0
-				seed = -302992937
-				state = Offered
-				agent = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,9201600,1620,4252.49980688095,2834.99987125397,1,0.952381,2,23243.5041943349,0,0,0
-				part = radialDecoupler
-				haul = False
-				dest = 1
-				sit = PRELAUNCH
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = radialDecoupler
-					body = Kerbin
-					situation = PRELAUNCH
-					uniqueID = 0.2021278441893532
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = PRELAUNCH
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 17a2983e-b9be-4ea1-ba4c-8ccee0c2bf28
-				type = SurveyContract
-				prestige = 0
-				seed = -332557147
-				state = Offered
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 81509.4274520874,43403770.1182365,6249.99989569187,11593.7492800007,7087.49967813492,0,2.137815,2.941176,83153.1716464223,0,0,0
-				targetBody = 1
-				centerLatitude = 0.970102248733113
-				centerLongitude = -76.8253891328457
-				randomTopic = Kerbin
-				dataName = observational
-				anomalyName = inconsistencies
-				reportName = reports
-				locationName = Kerbin
-				focusedSurvey = True
-				targetBand = HIGH
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Take a crew report
-					experiment = crewReport
-					flightThreshold = 18500
-					band = 3
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = 447255141
-					wpIndex = 0
-					wpTexture = report
-					wpLatitude = 0.97008369292024
-					wpLongitude = -76.8253574506764
-					wpLandlocked = False
-				}
-			}
 			CONTRACT_FINISHED
 			{
 				guid = 46717206-d998-4c5c-afb2-03f8817968e6
@@ -961,7 +961,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 178142.615748882
+		funds = 179762.615748882
 	}
 	SCENARIO
 	{
@@ -1178,6 +1178,10 @@ GAME
 			sci = 8
 			cap = 9.6
 		}
+		ExpParts
+		{
+			radialDecoupler = 1
+		}
 	}
 	SCENARIO
 	{
@@ -1321,27 +1325,27 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.2
-		UT = 1750.26419433476
+		UT = 1762.76419433475
 		activeVessel = 0
 		mapViewFiltering = -1026
 	}
 	LoaderInfo
 	{
-		BetterBurnTime v1.0.0.0 = True
-		KerbalAlarmClock v3.6.1.0 = True
-		KerbalEngineer v1.1.0.2 = True
-		KerbalEngineer.Unity v1.0.0.0 = True
-		MiniAVC v1.0.3.2 = True
-		NavBallDockingAlignmentIndicator v1.0.5950.156 = True
-		NavballUpDefault v0.0.0.0 = True
-		CLSInterfaces v1.0.0.0 = True
-		ShipManifest v5.0.9.0 = True
-		BetterBurnTime = True
-		KerbalAlarmClock = True
-		KerbalEngineer = True
-		NavBallDockingAlignmentIndicator = True
-		NavballUpDefault = True
-		ShipManifest = True
+		KerbalAlarmClock v3.6.1.0 = False
+		KerbalEngineer v1.1.0.2 = False
+		KerbalEngineer.Unity v1.0.0.0 = False
+		MiniAVC v1.0.3.2 = False
+		KerbalAlarmClock = False
+		KerbalEngineer = False
+		BetterBurnTime v1.0.0.0 = False
+		NavBallDockingAlignmentIndicator v1.0.5950.156 = False
+		NavballUpDefault v0.0.0.0 = False
+		CLSInterfaces v1.0.0.0 = False
+		ShipManifest v5.0.9.0 = False
+		BetterBurnTime = False
+		NavBallDockingAlignmentIndicator = False
+		NavballUpDefault = False
+		ShipManifest = False
 	}
 	ROSTER
 	{

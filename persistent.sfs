@@ -10,7 +10,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Agencies/StrutCo
-	launchID = 7
+	launchID = 8
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	PARAMETERS
@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 2837.49703796177
+		update = 3440.45821746571
 		version = 1.1.2
 		WEIGHTS
 		{
@@ -461,14 +461,16 @@ GAME
 				PARAM
 				{
 					name = KerbalTourParameter
-					state = Incomplete
-					values = 10969,0,0,0,0
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
 					kerbalName = Jacine Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3656,0,0,0,0
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
 						kerbalName = Jacine Kerman
@@ -1032,7 +1034,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 207730.457128525
+		funds = 220455.085738182
 	}
 	SCENARIO
 	{
@@ -1133,7 +1135,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 45.49
+		sci = 45.52333
 		Tech
 		{
 			id = start
@@ -1252,9 +1254,9 @@ GAME
 			id = recovery@KerbinSubOrbited
 			title = Recovery of a vessel after a sub-orbital flight.
 			dsc = 1
-			scv = 0.004629592
+			scv = 0.0007715821
 			sbv = 8
-			sci = 9.555556
+			sci = 9.592593
 			cap = 9.6
 		}
 		Science
@@ -1410,7 +1412,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.2
-		UT = 2837.87703796177
+		UT = 3448.7582174657
 		activeVessel = 0
 		mapViewFiltering = -1026
 	}
@@ -1674,7 +1676,7 @@ GAME
 			idx = 0
 			CAREER_LOG
 			{
-				flight = 5
+				flight = 6
 				0 = ExitVessel,Kerbin
 				0 = Flight,Kerbin
 				0 = BoardVessel,Kerbin
@@ -1692,10 +1694,14 @@ GAME
 				4 = Suborbit,Kerbin
 				4 = Land,Kerbin
 				4 = Recover
+				5 = Flight,Kerbin
+				5 = Suborbit,Kerbin
+				5 = Land,Kerbin
+				5 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 5
+				flight = 6
 			}
 		}
 		KERBAL
@@ -1810,54 +1816,6 @@ GAME
 		}
 		KERBAL
 		{
-			name = Ronlas Kerman
-			gender = Male
-			type = Tourist
-			trait = Tourist
-			brave = 0.7189496
-			dumb = 0.4162757
-			badS = False
-			tour = True
-			state = Available
-			ToD = 0
-			idx = 0
-			CAREER_LOG
-			{
-				flight = 1
-				0 = Flight,Kerbin
-				0 = Suborbit,Kerbin
-				0 = Land,Kerbin
-				0 = Recover
-			}
-			FLIGHT_LOG
-			{
-				flight = 1
-			}
-		}
-		KERBAL
-		{
-			name = Jacine Kerman
-			gender = Female
-			type = Tourist
-			trait = Tourist
-			brave = 0.2265934
-			dumb = 0.1384192
-			badS = False
-			tour = False
-			state = Available
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
 			name = Kirmal Kerman
 			gender = Male
 			type = Tourist
@@ -1885,7 +1843,7 @@ GAME
 		MESSAGE
 		{
 			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destinations.</b>~n~n'Ronlas's Travel Itinerary' complete!~n~n<color=#B4D455>£ 10,969   </color>
+			message = <b>Ferry four tourists safely to their destinations.</b>~n~n'Jacine's Travel Itinerary' complete!~n~n<color=#B4D455>£ 10,969   </color>
 			color = 2
 			icon = 3
 			read = False

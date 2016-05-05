@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 2328.23159850909
+		update = -1000
 		version = 1.1.2
 		WEIGHTS
 		{
@@ -1030,7 +1030,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 195568.462532997
+		funds = 194968.462532997
 	}
 	SCENARIO
 	{
@@ -1131,7 +1131,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 60.29
+		sci = 45.29
 		Tech
 		{
 			id = start
@@ -1157,6 +1157,13 @@ GAME
 			state = Available
 			cost = 5
 			part = stackDecoupler
+		}
+		Tech
+		{
+			id = survivability
+			state = Available
+			cost = 15
+			part = radialDrogue
 		}
 		Science
 		{
@@ -1401,7 +1408,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.2
-		UT = 2337.05159850908
+		UT = 2341.23159850908
 		activeVessel = 0
 		mapViewFiltering = -1026
 	}
@@ -1864,22 +1871,6 @@ GAME
 	}
 	MESSAGESYSTEM
 	{
-		flash = True
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destinations.</b>~n~n'Gerble's Travel Itinerary' complete!~n~n<color=#B4D455>£ 10,969   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry four tourists safely to their destinations.</b>~n~n'Suborbital spaceflight on Kerbin' complete!~n~n<color=#B4D455>£ 3,656   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
+		flash = False
 	}
 }
